@@ -1,7 +1,9 @@
 import requests 
+##2η αλλαγή
+##input απο χρήστη
 
-url = 'http://facebook.com/'  
-## η λύση μου
+url = input("Give url to get info. Make sure you don't forget 'http': ")  
+
 with requests.get(url) as response:  
     print(f"Website headers are {url} \n, {response.headers} \n\n")
     server = response.headers.get("Server")
